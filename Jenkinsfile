@@ -12,8 +12,7 @@ pipeline {
             steps {
                 // Build Docker image
                 script {
-                    sh 'docker -v'
-                    //docker.build('my-jenkins-docker-project')
+                    docker.build('my-jenkins-docker-project')
                 }
             }
         }
